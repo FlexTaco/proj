@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Holistic Hand Healer</h1>
+      <form action="/login" method="post">
+        <label for="first-name">Therapist's First Name(REQUIRED):</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="example: Jane"
+          required
+        />
+        <br />
+        <label for="last-name">Therapist's Last Name(REQUIRED):</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="example: Doe"
+          required
+        />
+        <br />
+        <label for="password">Therapist's Password(REQUIRED):</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="example: 1#Password21"
+          required
+        />
+        <br />
+        <label for="id">Therapist's ID #(REQUIRED):</label>
+        <input
+          type="text"
+          id="id"
+          name="id"
+          placeholder="example: 16167"
+          required
+        />
+        <br />
+
+        <label for="phone">Therapist's Phone #(REQUIRED):</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="example: 555-555-5555"
+          required
+        />
+        <br />
+
+        <label for="email">Therapist's Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example: HHH@OTs.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="checkbox">Check to request Email Confirmation</label>
+
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <label for="dropdown">Select a transaction:</label>
+
+        <!-- done with radiobox -->
+        <label for="checkbox" id="option_label"
+          >Search A Therapist's Accounts</label
+        >
+        <input type="radio" name="option" id="option" required />
+        <label for="checkbox" id="option_label">Book A Client's Session</label>
+        <input type="radio" name="option" id="option" required />
+
+        <label for="checkbox" id="option_label"
+          >Update A Client's Records</label
+        >
+        <input type="radio" name="option" id="option" required />
+
+        <label for="checkbox" id="option_label"
+          >Cancel A Patient's Session</label
+        >
+        <input type="radio" name="option" id="option" required />
+        <label for="checkbox" id="option_label">Request Medical Devices</label>
+        <input type="radio" name="option" id="option" required />
+        <label for="checkbox" id="option_label">Create A New Patients</label>
+        <input type="radio" name="option" id="option" required />
+        <br />
+        <br />
+
+        <button type="reset" class="buttons">Reset</button>
+        <button type="submit" class="buttons">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
